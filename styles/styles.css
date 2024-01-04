@@ -66,15 +66,10 @@ a {
     display: block;
 }
 
-.overlay {
+.home-overlay {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.home-overlay {
+    text-align: center;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -91,14 +86,14 @@ a {
 .img-overlay-text {
     color: #F3F3F3;
     font-size: 3vw;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .home-img-overlay-text {
+    color: #F3F3F3;
     display: inline block;
     padding: 5px 15px;
     font-size: 4vw; /* Might need to change later and just make the text and background as part of the image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .home-img-overlay-text::before {
@@ -131,6 +126,8 @@ a {
 
 .general-content {
     grid-area: "content";
+    position: relative;
+    overflow: hidden;
 }
 
 .page-heading-img-container {
@@ -138,10 +135,14 @@ a {
     display: flex;
     justify-content: center;
     background-color: lightgray;
+    height: 175px;
+    overflow: hidden;
 }
 
 .page-heading-img {
-    height: 175px;
+    width: 100%; /* BEWARE: this combo stretches the image*/
+    height: auto;
+    object-fit: cover;
 }
 
 .page-img-tinter {
@@ -151,6 +152,23 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.img-overlay-text {
+    color: #F3F3F3;
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .footer {
