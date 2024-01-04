@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: "header",
+                         "content",
+                         "footer";
+    
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    grid-area: "header";
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-container {
+    /* width: 25%; */
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 375px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-nav {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-content {
+    grid-area: "content";
+    position: relative;
+}
+
+.home-img {
+    width: 100%;
+    display: block;
+}
+
+.home-img-overlay {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    transform: translate(-40%, -50%);
+    color: #F3F3F3;
+    display: inline block;
+    padding: 10px 20px;
+    font-size: 4vw; /* Might need to change later and just make the text and background as part of the image */
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.home-img-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 10px; /* Adjust border radius for rounded corners */
+    z-index: -1; /* Place behind the text */
+}
+
+.learn-more {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 49%;
+    left: 70%;
+    /* transform: translate(-40%, -50%); */
+    padding: 10px 20px;
+    font-size: 2vw;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #555;
+}
+
+.footer {
+    grid-area: "footer";
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.site-map {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-map-item {
+    list-style-type: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        /* Adjust styles for smaller screens */
+    }
+
+    /* Other styles for smaller screens */
+}
