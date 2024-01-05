@@ -175,6 +175,12 @@ a {
 }
 
 /* General Page Text */
+.page-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .page-statement {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -183,24 +189,54 @@ a {
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+.section-divider {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.text-section {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
 .section-heading {
     font-size: 24px;
     font-weight: 600;
-    color: #444;
+    color: #000000;
     margin-bottom: 12px;
 }
 
 .section-text {
     font-size: 16px;
     line-height: 1.6;
-    color: #666;
+    color: #333333;
     margin-bottom: 20px;
 }
 
