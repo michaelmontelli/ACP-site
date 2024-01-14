@@ -134,6 +134,10 @@ a {
     background-color: #fafafa;
 }
 
+.legal-spacing {
+    padding: 30px;
+}
+
 .page-heading-img-container {
     position: relative;
     display: flex;
@@ -199,6 +203,10 @@ a {
 
 .heading-to-text-spacer {
     margin: 10px;
+}
+
+.back-button {
+    padding: 20px;
 }
 
 .legal-holder {
