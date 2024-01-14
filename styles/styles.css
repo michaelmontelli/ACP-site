@@ -131,6 +131,7 @@ a {
     grid-area: "content";
     position: relative;
     overflow: hidden;
+    background-color: #fafafa;
 }
 
 .page-heading-img-container {
@@ -176,7 +177,7 @@ a {
 
 /* General Page Text */
 .page-info {
-    background-color: #f9f9f9;
+    background-color: #fafafa;
     padding: 20px;
     border-radius: 10px;
 }
@@ -200,6 +201,34 @@ a {
     margin: 10px;
 }
 
+.legal-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legal-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.legal-link {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.legal-link:hover {
+    text-decoration: underline;
+}
+
+.spacing-div {
+    margin: 100px;
+}
+
 .legal-page-click {
     text-decoration: none;
 }
@@ -211,7 +240,6 @@ a {
 
 .legal-page-heading {
     text-align: center;
-
 }
 
 .legal-info {
