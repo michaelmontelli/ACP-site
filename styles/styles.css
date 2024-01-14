@@ -200,6 +200,20 @@ a {
     margin: 10px;
 }
 
+.legal-page-click {
+    text-decoration: none;
+}
+
+.legal-page-select {
+    display: flex;
+    justify-content: space-around;
+}
+
+.legal-page-heading {
+    text-align: center;
+
+}
+
 .legal-info {
     display: flex;
     flex-direction: column;
