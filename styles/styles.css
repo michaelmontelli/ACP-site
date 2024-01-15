@@ -63,6 +63,7 @@ li {
 
 .nav-link {
     text-decoration: none;
+    padding: 5px;
 }
 
 /* Home Page */
@@ -193,7 +194,7 @@ li {
 
 /* General Page Text */
 .page-info {
-    background-color: #fafafa;
+    background-color: hsl(0, 0%, 98%);
     padding: 20px;
     border-radius: 10px;
 }
@@ -310,13 +311,13 @@ li {
 
 .section-heading {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     color: #000000;
     margin-bottom: 12px;
 }
 
 .section-text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     color: #333333;
     margin-bottom: 20px;
@@ -325,6 +326,7 @@ li {
 .account-login-center {
     display: flex;
     justify-content: center;
+    background-color: hsl(0, 0%, 98%);
 }
 
 .account-login-holder {
@@ -337,17 +339,22 @@ li {
 
 .account-login-header {
     margin-bottom: 10px;
-
+    font-weight: 400;
 }
 
 .account-login-text {
     margin: 30px 0;
-    font-weight: bold; /* Adjust the font weight to make the text more prominent */
-    font-size: 1.1em;
+    font-size: 24px;
 }
 
 .account-login-button {
-    font-size: larger;
+    font-size: 28px;
+    padding: 20px 30px;
+}
+
+.contact-header {
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 
 
