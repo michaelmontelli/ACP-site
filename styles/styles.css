@@ -363,29 +363,41 @@ li {
 
 .contact-us-grid-holder {
     display: grid;
-    grid-template-areas: "space1 addresses space2";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". locations .";
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-.space1 {
-    grid-area: "space1";
-}
-
-.space2 {
-    grid-area: "space2";
-}
 
 .contact-cards {
-    grid-area: "addresses";
-}
-
-.contact-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-area: locations;
 }
 
 .location-title {
+    text-align: center;
+}
+
+.location-info {
+    display: grid;
+    /* grid-template-areas: "address phone-numbers",
+                            "email email"; */
+    grid-template-columns: 1fr 1fr;
+}
+
+.address {
+    /* grid-area: address; */
+    grid-column: 1;
+    text-align: center;
+}
+
+.phone-numbers {
+    /* grid-area: phone-numbers; */
+    grid-column: 2;
+    text-align: center;
+}
+
+.email {
+    /* grid-area: email; */
+    grid-column: 1 / span 2;
     text-align: center;
 }
 
