@@ -453,10 +453,18 @@ li {
 .site-map {
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .site-map-item {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-map-item a {
+    text-decoration: none;
 }
 
 
