@@ -322,6 +322,34 @@ li {
     margin-bottom: 20px;
 }
 
+.account-login-center {
+    display: flex;
+    justify-content: center;
+}
+
+.account-login-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 660px;
+}
+
+.account-login-header {
+    margin-bottom: 10px;
+
+}
+
+.account-login-text {
+    margin: 30px 0;
+    font-weight: bold; /* Adjust the font weight to make the text more prominent */
+    font-size: 1.1em;
+}
+
+.account-login-button {
+    font-size: larger;
+}
+
 
 /* Footer */
 .footer {
