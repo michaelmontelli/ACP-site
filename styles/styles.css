@@ -334,17 +334,18 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 660px;
+    max-width: 690px;
 }
 
 .account-login-header {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: 400;
 }
 
 .account-login-text {
     margin: 30px 0;
     font-size: 24px;
+    font-weight: 300;
 }
 
 .account-login-button {
@@ -352,11 +353,41 @@ li {
     padding: 20px 30px;
 }
 
+.contact-us-holder {
+    padding: 40px;
+}
+
 .contact-header {
-    margin-bottom: 10px;
     font-weight: 400;
 }
 
+.contact-us-grid-holder {
+    display: grid;
+    grid-template-areas: "space1 addresses space2";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.space1 {
+    grid-area: "space1";
+}
+
+.space2 {
+    grid-area: "space2";
+}
+
+.contact-cards {
+    grid-area: "addresses";
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-title {
+    text-align: center;
+}
 
 /* Footer */
 .footer {
