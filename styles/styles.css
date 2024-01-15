@@ -355,25 +355,42 @@ li {
 
 .contact-us-holder {
     padding: 40px;
+    text-align: center;
 }
 
 .contact-header {
     font-weight: 400;
+    margin: 40px;
 }
 
 .contact-us-grid-holder {
     display: grid;
     grid-template-areas: ". locations .";
     grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
 }
-
 
 .contact-cards {
     grid-area: locations;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-card {
+    max-width: 690px;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .location-title {
     text-align: center;
+    font-weight: 400;
+}
+
+.contact-info-header {
+    font-weight: 600;
 }
 
 .location-info {
@@ -381,24 +398,32 @@ li {
     /* grid-template-areas: "address phone-numbers",
                             "email email"; */
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .address {
     /* grid-area: address; */
     grid-column: 1;
     text-align: center;
+    font-size: 18px;
+}
+
+.address-line {
+    margin: 0;
 }
 
 .phone-numbers {
     /* grid-area: phone-numbers; */
     grid-column: 2;
     text-align: center;
+    font-size: 18px;
 }
 
 .email {
     /* grid-area: email; */
     grid-column: 1 / span 2;
     text-align: center;
+    font-size: 18px;
 }
 
 /* Footer */
