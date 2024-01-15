@@ -24,6 +24,14 @@ a {
     color: black;
 }
 
+em {
+    font-weight: bolder;
+}
+
+li {
+    margin: 10px;
+}
+
 /* Header */
 .header {
     grid-area: "header";
@@ -132,6 +140,10 @@ a {
     position: relative;
     overflow: hidden;
     background-color: #fafafa;
+}
+
+.legal-holder {
+    padding: 20px;
 }
 
 .legal-spacing {
